@@ -14,5 +14,7 @@ var user2 = {
 var user3 = {
     name: 'Frank',
     age: 23,
+    getMessage: function () {
+        return 'Welcome to hell ' + name;
+    },
 };
-// FUNCTIONS IN INTERFACES

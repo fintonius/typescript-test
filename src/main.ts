@@ -16,15 +16,19 @@ const user2 = {
     name: "Jerk",
 }
 
-// INTERFACES:
+// INTERFACES & FUNCTIONS IN INTERFACES:
 
-interface User {
+interface UserInterface {
     name: string;
     age?: number;
+    getMessage(): string;
 }
-const user3: User = {
+const user3: UserInterface = {
     name: 'Frank',
     age: 23,
+    getMessage() {
+        return 'Welcome to hell ' + name;
+    },
 }
 
-// FUNCTIONS IN INTERFACES
+
